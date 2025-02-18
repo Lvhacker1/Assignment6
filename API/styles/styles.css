@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #673AB7;
+    padding: 30px;
+}
+
+html {
+    height: 100vh;
+}
+
+.main-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 14px;
+    width: 100%;
+    margin: 0 auto;
+    height: 780px;
+}
+
+.random-joke_section {
+    height: 250px;
+}
+
+.joke-title {
+    font-size: 20px;
+    margin: 20px 0px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #03A9F4;
+}
+
+.joke-button {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    background-color: red;
+}
+
+.joke-result {
+    padding: 10px;
+    background-color: #8BC34A;
+    border-radius: 8px;
+}
+
+.joke-title_second {
+    font-size: 20px;
+    margin: 20px 0px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #03A9F4;
+}
+
+.joke-type_section {
+    height: 250px;
+    margin-top: 70px;
+}
+
+#joke-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin: 10px 0px;
+    border-radius: 5px;
+    background-color: #ffc107 !important;
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+        height: 800px;
+    }
+
+    .joke-title {
+        padding: 20px;
+    }
+
+    .joke-title_second {
+        padding: 20px;
+    }
+
+    .random-joke_section,
+    .joke-type_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    #joke-input {
+        width: 70%;
+    }
+    
+    .joke-result {
+        width: 500px;
+        min-height: 150px;
+        height: auto;
+        max-height: 200px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        height: 700px;
+    }
+
+    .joke-result {
+        width: 800px;
+        min-height: 100px;
+    }
+
+    #joke-input {
+        width: 47%;
+    }
+}
