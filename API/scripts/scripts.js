@@ -37,4 +37,4 @@ $(() => {
 
     $('#random-joke').on('click', catchJoke)
     $('#get_joke-type').on('click', getJokeType)
-});
+})
