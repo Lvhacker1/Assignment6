@@ -6,13 +6,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="./scripts/scripts.js" defer></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
-    <header class="header">
-        <h1 class="header_page-title"></h1>
-    </header>
-
-
+    
+    <section class="main-section">
+        <div class="container">
+            <div class="random-joke_section">
+                <h1 class="joke-title">Press the button below to get a random joke</h1>
+                <button id="random-joke" class="joke-button">Get random joke</button>
+                <div id="joke-result" class="joke-result" style="display: none;"></div>
+            </div>
+            <div class="joke-type_section">
+                <h2 class="joke-title_second">Type 'programming' or 'dark' to get jokes by category</h2>
+                <input type="text" id="joke-input" placeholder="Type (programming or dark), to get jokes by category">
+                <button id="get_joke-type" class="joke-button">Get joke by category</button>
+                <div id="joke-type_result" class="joke-result" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
     
 </body>
 </html>
