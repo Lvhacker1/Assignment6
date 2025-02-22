@@ -7,7 +7,7 @@ $(() => {
             let response = await fetch(`${API_URL_RANDOM}random`);
             let jokeData = await response.json();
 
-            $('#joke-result').html(`<p>Question: ${jokeData.setup}</p> <p>Answer: ${jokeData.punchline}</p>`).show();
+            $('#joke-result').html(`<p> ${jokeData.setup}</p> <p> ${jokeData.punchline}</p>`).show();
             console.log('Random joke:', jokeData);
         } catch (error) {
             console.error('Error fetching random joke:', error)
@@ -27,7 +27,7 @@ $(() => {
             let response = await fetch(`${API_URL_JOKE}${jokeType}?type=twopart`);
             let jokeData = await response.json();
 
-            $('#joke-type_result').html(`<p>Question: ${jokeData.setup}</p> <p>Answer: ${jokeData.delivery}</p>`).show();
+            $('#joke-type_result').html(`<p> ${jokeData.setup}</p> <p> ${jokeData.delivery}</p>`).show();
             console.log('Joke type:', jokeData);
         } catch (error) {
             console.error('Error fetching joke by category:', error);
